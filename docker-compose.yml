@@ -1,0 +1,38 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+
+  avalon:
+    image: avalon_ph:latest
+    networks:
+      static_net2:
+            ipv4_address: 10.5.0.5
+    ports:
+      - 3001:3001
+      
+  mongo:
+    image: mongo
+    restart: always
+    networks :
+      static_net2:
+            ipv4_address: 10.5.0.6
+    ports:
+      - 27017:27017
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    
+    networks:
+      static_net2:
+            ipv4_address: 10.5.0.7
+    ports:
+      - 8081:8081
+      
+networks:
+  static_net2:
+    driver: bridge
+    ipam:
+      config:
+       - subnet: 10.5.0.0/16

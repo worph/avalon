@@ -1,0 +1,2 @@
+{ pub: 'eLzHSXuEp9mSc6wApDR5WZZJmFFq6WqXzAW6XbThaKF3',
+  priv: '52JVpRs16ybfkAAQYL78MqePzHJ7VYdPXLMLsiNKF3jf' }

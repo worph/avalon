@@ -23,7 +23,7 @@ var mongo = {
                 if (!acc) {
                     db.collection('accounts').insertOne({
                         name: 'master',
-                        pub: 'qFsrM3bBfJmWsEZLxpv2QDrDnUtZTwqrrPiLsZpaGGSR',
+                        pub: 'eLzHSXuEp9mSc6wApDR5WZZJmFFq6WqXzAW6XbThaKF3',
                         balance: 1000000,
                         bw: {v:0,t:0},
                         vt: {v:0,t:0},
